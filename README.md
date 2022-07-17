@@ -1,11 +1,11 @@
 # Quick-sqlite
 ### Overview
-A lightweight key-value database basic sqlite.
+一個輕量級的鍵值數據庫基礎sqlite。
 ### Install
 ```
 pip install quick-sqlite-database
 ```
-### Example
+### 例子
 ```py
 from quick_sqlite import Database
 
@@ -15,27 +15,26 @@ db.set("name", "Dada878")
 
 db.get("name") #Dada878
 ```
-### Documentation
+### 文檔
 ```Database(path, tableName?)```\
-connect to database
+連接到數據庫
 
 ```db.set(key,value)```\
-set value by key
+key設置值
 
 ```db.get(key)```\
-get value by key
+key獲取值
 
 ```db.append(key,more)```\
-add more to key's value
+為key值增加更多
 
 ```db.get_all()```\
-return all key and value as array
-
+將所有鍵和值作為數組返回
 ```db.get_all_key()```\
-return all key as array
+將所有鍵作為數組返回\
 
 ```db.delete(key)```\
-delete item by key
+按鍵刪除項目
 
 ```db.exists(key)```\
-check if key exists, return boolean
+檢查鍵是否存在，返回布爾值
